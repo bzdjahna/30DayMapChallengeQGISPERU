@@ -1,0 +1,1056 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Mapatón orientada a compartir mapas temáticos diversos por cada día del mes, empleando software libre de código abierto.">
+      
+      
+      
+        <meta name="author" content="qgispe">
+      
+      
+        <link rel="canonical" href="https://qgispe.github.io/30DayMapChallengeQGISPERU/">
+      
+      <link rel="icon" href="imgs/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+    
+    
+      
+        <title>30DCMQGISPE</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.802231af.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Lato";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="manifest" href="manifest.webmanifest" crossorigin="use-credentials">
+    
+    
+      <link rel="stylesheet" href="css/print-site.css">
+    
+      <link rel="stylesheet" href="css/print-site-material.css">
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="stylesheets/gbextra.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="deep-orange">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#30daymapchallengeqgisperu" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="." title="30DCMQGISPE" class="md-header__button md-logo" aria-label="30DCMQGISPE" data-md-component="logo">
+      
+  <img src="imgs/logo_white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30DCMQGISPE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Incio
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/qgispe/30DayMapChallengeQGISPERU/" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    30DaysMapChallengeQGISPE
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="." class="md-tabs__link md-tabs__link--active">
+      Incio
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="30DCMQGISPE_dia01/" class="md-tabs__link">
+        Mapas publicados
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="index.md" class="md-tabs__link">
+      Estadísticas
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="index.md" class="md-tabs__link">
+      Cierre del evento
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="30DCMQGISPE" class="md-nav__button md-logo" aria-label="30DCMQGISPE" data-md-component="logo">
+      
+  <img src="imgs/logo_white.svg" alt="logo">
+
+    </a>
+    30DCMQGISPE
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/qgispe/30DayMapChallengeQGISPERU/" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    30DaysMapChallengeQGISPE
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Incio
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Incio
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-proyecto-de-mapeo-social-diario-para-el-mes-de-septiembre-del-2021" class="md-nav__link">
+    [🔵] 1. PROYECTO DE MAPEO SOCIAL DIARIO PARA EL MES DE SEPTIEMBRE DEL 2021 🚀
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-temas" class="md-nav__link">
+    [🔵] 2. TEMAS 📆
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-datos-recursos" class="md-nav__link">
+    [🔵] 3. DATOS + RECURSOS 📁 📍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-herramientas" class="md-nav__link">
+    [🔵] 4. HERRAMIENTAS 🔧⚙
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-tutoriales" class="md-nav__link">
+    [🔵] 5. TUTORIALES 🎥 👩‍💻 👨‍💻
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-codigo-de-conducta" class="md-nav__link">
+    [🔵] 6. CÓDIGO DE CONDUCTA 📜⚖
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-referencias" class="md-nav__link">
+    [🔵] 7. REFERENCIAS 📝
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-cita" class="md-nav__link">
+    [🔵] 8. CITA 🔖
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-licencia" class="md-nav__link">
+    [🔵] 9. LICENCIA 📃
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Mapas publicados
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Mapas publicados" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Mapas publicados
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="30DCMQGISPE_dia01/" class="md-nav__link">
+        Día 01
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.md" class="md-nav__link">
+        Día 02
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.md" class="md-nav__link">
+        Estadísticas
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.md" class="md-nav__link">
+        Cierre del evento
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-proyecto-de-mapeo-social-diario-para-el-mes-de-septiembre-del-2021" class="md-nav__link">
+    [🔵] 1. PROYECTO DE MAPEO SOCIAL DIARIO PARA EL MES DE SEPTIEMBRE DEL 2021 🚀
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-temas" class="md-nav__link">
+    [🔵] 2. TEMAS 📆
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-datos-recursos" class="md-nav__link">
+    [🔵] 3. DATOS + RECURSOS 📁 📍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-herramientas" class="md-nav__link">
+    [🔵] 4. HERRAMIENTAS 🔧⚙
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-tutoriales" class="md-nav__link">
+    [🔵] 5. TUTORIALES 🎥 👩‍💻 👨‍💻
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-codigo-de-conducta" class="md-nav__link">
+    [🔵] 6. CÓDIGO DE CONDUCTA 📜⚖
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-referencias" class="md-nav__link">
+    [🔵] 7. REFERENCIAS 📝
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-cita" class="md-nav__link">
+    [🔵] 8. CITA 🔖
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-licencia" class="md-nav__link">
+    [🔵] 9. LICENCIA 📃
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/qgispe/30DayMapChallengeQGISPERU/edit/main/docs/README.md" title="Editar esta página" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="30daymapchallengeqgisperu"><strong>30DayMapChallengeQGISPERU</strong> 🇵🇪🌎🗺<a class="headerlink" href="#30daymapchallengeqgisperu" title="Permanent link">↵</a></h1>
+<p><a href="https://github.com/qgispe"><img alt="qgispe" src="https://img.shields.io/badge/qgis-peru-%233BB300.svg?&amp;style=for-the-badge&amp;logo=qgis&amp;logoColor=white" /></a><a href="https://www.rstudio.com/products/rstudio/download/#download"><img alt="R" src="https://img.shields.io/badge/RStudio-75AADB?style=for-the-badge&amp;logo=RStudio&amp;logoColor=white" /></a><a href="https://inkscape.org/release/inkscape-1.1/"><img alt="inkscape" src="https://img.shields.io/badge/Inkscape-000000?style=for-the-badge&amp;logo=Inkscape&amp;logoColor=white&quot;" /></a><a href="https://www.python.org/downloads/"><img alt="python" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&amp;logo=python&amp;logoColor=darkgreen" /></a><a href="https://github.com/Asabeneh/30-Days-Of-HTML"><img alt="HTML" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white" /></a><a href="https://github.com/oluwakayode-a/30-Days-of-CSS"><img alt="CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&amp;logo=css3&amp;logoColor=white" /></a><a href="https://github.com/wesbos/JavaScript30"><img alt="JS" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&amp;logo=javascript&amp;logoColor=F7DF1E" /></a><a href="https://plotly.com/python/getting-started/"><img alt="Plotly" src="https://img.shields.io/badge/Plotly-239120?style=for-the-badge&amp;logo=plotly&amp;logoColor=white" /></a><a href="https://www.postgresql.org/download/"><img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white" /></a><a href="https://www.sqlite.org/download.html"><img alt="SQLite" src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&amp;logo=sqlite&amp;logoColor=white" /></a><a href="www.linkedin.com/in/qgispe"><img alt="Linkedin" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" /></a><a href="https://twitter.com/qgispe"><img alt="Twitter" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&amp;logo=twitter&amp;logoColor=white" /></a><a href="https://t.me/qgisperu"><img alt="Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&amp;logo=telegram&amp;logoColor=white" /></a><a href="https://www.youtube.com/channel/UCj5_XjZ-KpYBYhyrpjXJjcA"><img alt="Youtube" src="https://img.shields.io/badge/youtube-%23FF0000.svg?&amp;style=for-the-badge&amp;logo=youtube&amp;logoColor=white" /></a><a href="https://www.instagram.com/qgispe/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&amp;logo=instagram&amp;logoColor=white" /></a><a href="https://www.facebook.com/qgispe"><img alt="Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&amp;logo=facebook&amp;logoColor=white" /></a></p>
+<p><center><a href="#"><img src="_flyer/flyer.png"></a></center></p>
+<p><em>¡Mapatón orientada a compartir mapas temáticos diversos por cada día del mes, empleando software de código de uso libre!</em></p>
+<h2 id="1-proyecto-de-mapeo-social-diario-para-el-mes-de-septiembre-del-2021">[🔵] <strong>1. PROYECTO DE MAPEO SOCIAL DIARIO PARA EL MES DE SEPTIEMBRE DEL 2021</strong> 🚀<a class="headerlink" href="#1-proyecto-de-mapeo-social-diario-para-el-mes-de-septiembre-del-2021" title="Permanent link">↵</a></h2>
+<p>¡Hola amigos! Recordemos que el repositorio oficial del #30DayMapChallenge es un desafío diario, iniciado por nuestro amigo <strong>Topi Tjukanov</strong> con el propósito de <strong>mapear/georreferenciar/cartografiar/visualizar/</strong> datos que puedan ser relevantes para la comunidad espacial y para todos en general.</p>
+<p>El propósito principal de esta mapatón es la de <code>crear y publicar</code> mapas basados en diferentes temáticas** en cada uno de los días del mes en el que se desarrolle. Para ello se utilizará el hashtag #30DayMapChallengeQGISPERU y podremos ver el calendario de temas a continuación. ¡Es todo un reto, ehhh!</p>
+<p>Cada participante podrá preparar sus datos y desarrollar un mapa el cual podrá presentar las veces que desee. Sin embargo, la idea es que por cada día se presente un mapa diferente. Solo debes incluir una imagen del mapa, y cuando lo publiques ya sea en <strong>Twitter, Instagram, Facebook o Linkedin</strong> colocar los siguientes hashtags:</p>
+<p><strong>#30DayMapChallengeQGISPERU</strong></p>
+<p><strong>#QGISPERU</strong></p>
+<p><strong>#ComparteYlibérate</strong></p>
+<p>No existen restricciones en el uso de herramientas o plugins específicos o de tecnologías binarias de uso libre (vale decir, si utilizas otros softwares de <code>CÓDIGO DE USO LIBRE</code>). Si haces menos de 30, también está bien. <strong>¡La idea es desarrollar!</strong></p>
+<p>Por favor, consulta nuestro código de conducta al final de la página.</p>
+<h2 id="2-temas">[🔵] <strong>2. TEMAS</strong> 📆<a class="headerlink" href="#2-temas" title="Permanent link">↵</a></h2>
+<table>
+<thead>
+<tr>
+<th>Día</th>
+<th>Fecha</th>
+<th>Tema</th>
+<th>Detalles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1/09/2020</td>
+<td>Puntos</td>
+<td>Un mapa con puntos.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2/09/2020</td>
+<td>Líneas</td>
+<td>Un mapa con líneas.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3/09/2020</td>
+<td>Polígonos</td>
+<td>Un mapa con polígonos.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4/09/2020</td>
+<td>Hexágonos</td>
+<td>Un mapa con hexágonos.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5/09/2020</td>
+<td>Azul</td>
+<td>Un mapa con la temática del color azul o un mapa donde predomine el azul o derivados.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>6/09/2020</td>
+<td>Rojo</td>
+<td>Un mapa con la temática del color rojo o un mapa donde predomine el rojo o derivados.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>7/09/2020</td>
+<td>Verde</td>
+<td>Un mapa con la temática del color verde o un mapa donde predomine el verde o derivados.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>8/09/2020</td>
+<td>Amarillo</td>
+<td>Un mapa con la temática del color amarillo o un mapa donde predomine el amarillo o derivados.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>9/09/2020</td>
+<td>Monócromo</td>
+<td>Una imagen monocromática se compone de un color (o valores de un color). Entonces, por ejemplo, los mapas en blanco y negro son válidos.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>10/09/2020</td>
+<td>Grilla</td>
+<td>Ya sea que lo llamemos grilla, grid o red de pescar, el objetivo es visualizar un mapa donde el protagonista sea la grilla y sus usos.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>11/09/2020</td>
+<td>3D</td>
+<td>¡Muestra un dato, hecho, información o lo que desees en un mapa en 3D! Existe documentación oficial en QGIS para que tengas referencias.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>12/09/2020</td>
+<td>Mapas no realizados con un sofwtare SIG</td>
+<td>¡Muestra tu creatividad sin un SIG!</td>
+</tr>
+<tr>
+<td>13</td>
+<td>13/09/2020</td>
+<td>Raster</td>
+<td>Podemos hacer cualquier mapa incluyendo datos raster, sin embargo, ¡este día el protagonista será el pixel!.</td>
+</tr>
+<tr>
+<td>14</td>
+<td>14/09/2020</td>
+<td>Cambio Climático</td>
+<td>El cambio climático es un desafío y tenemos un papel importante para comunicarlo espacialmente.</td>
+</tr>
+<tr>
+<td>15</td>
+<td>15/09/2020</td>
+<td>Redes</td>
+<td>Redes y conexiones.</td>
+</tr>
+<tr>
+<td>16</td>
+<td>16/09/2020</td>
+<td>Áreas naturales</td>
+<td>Las áreas naturales tienden a verse hermosas en los mapas. Más aún si es con software de código de uso libre.</td>
+</tr>
+<tr>
+<td>17</td>
+<td>17/09/2020</td>
+<td>Mapas históricos</td>
+<td>Datos históricos, estilo de mapa históricos y algo más.</td>
+</tr>
+<tr>
+<td>18</td>
+<td>18/09/2020</td>
+<td>Usos del suelo</td>
+<td>¿Cuáles son los tipos de usos de suelo que se aplican en ciudades, regiones, países o continentes? ¿Cómo ha cambiado en el tiempo?.</td>
+</tr>
+<tr>
+<td>19</td>
+<td>19/09/2020</td>
+<td>NULL</td>
+<td>Datos perdidos. Todos odiamos eso, ¿verdad?. Bueno, entonces ¿cómo mapeaamos algo que falta?. ¡Es un reto!.</td>
+</tr>
+<tr>
+<td>20</td>
+<td>20/09/2020</td>
+<td>Población</td>
+<td>No todo son gráficos de barras o plots. ¿Te has dado cuenta cómo la tasa poblacional ha venido evolucionando a través del tiempo, espacialmente?</td>
+</tr>
+<tr>
+<td>21</td>
+<td>21/09/2020</td>
+<td>Recursos hídricos</td>
+<td>Océanos, lagos, ríos o algo hídrico completamente diferente.</td>
+</tr>
+<tr>
+<td>22</td>
+<td>22/09/2020</td>
+<td>Educación</td>
+<td>Ya sean mapas estáticos o dinámicos, existen muchas formas de realizar mapas que eduquen. Muestra tu talento a los alumnos :)</td>
+</tr>
+<tr>
+<td>23</td>
+<td>23/09/2020</td>
+<td>Límites políticos</td>
+<td>Los límites están a nuestro alrededor. Algunos de ellos son visibles y otros están en nuestra cabeza, o corazón.</td>
+</tr>
+<tr>
+<td>24</td>
+<td>24/09/2020</td>
+<td>Elevación</td>
+<td>Hermosas sombras, bellos contornos, altas montañas o valles bajos. Los mapas de elevación lo dicen todo.</td>
+</tr>
+<tr>
+<td>25</td>
+<td>25/09/2020</td>
+<td>COVID-19</td>
+<td>Estamos muy cansados de ver este tema por todos los luagres, pero no podemos omitirlo. Vamos, poco a poco va decreciendo la curva.</td>
+</tr>
+<tr>
+<td>26</td>
+<td>26/09/2020</td>
+<td>Mapas realizados con nuevos plugins</td>
+<td>Este día será un <strong>#CaféConPluggins</strong> exclusivo para la mapatón.</td>
+</tr>
+<tr>
+<td>27</td>
+<td>27/09/2020</td>
+<td>Grandes o pequeños datos</td>
+<td>¿A qué le llamamos "grandes datos espaciales" significativos? ¿Qué tipo de datos espaciales son "pequeños" pero interesantes?.</td>
+</tr>
+<tr>
+<td>28</td>
+<td>28/09/2020</td>
+<td>Mapas no geográficos</td>
+<td>Mapas mentales, mapas de planetas, mapas de bacterias microscópicas o tal vez incluso algo más extraño.</td>
+</tr>
+<tr>
+<td>29</td>
+<td>29/09/2020</td>
+<td>Mapas globales</td>
+<td>El mundo no es plano, por lo que con este mapa puedes enfatizar la redondez de nuestro planeta. Puede utilizar, por ejemplo, algunos plugins de QGIS.</td>
+</tr>
+<tr>
+<td>30</td>
+<td>30/09/2020</td>
+<td>Un mapa libre</td>
+<td>Sin reglas. Has llegado hasta aquí, así que haz lo que quieras. Solo haz un mapa.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-datos-recursos">[🔵] <strong>3. DATOS + RECURSOS</strong> 📁 📍<a class="headerlink" href="#3-datos-recursos" title="Permanent link">↵</a></h2>
+<p>Puede utilizar los datos que usted elija. Aquí hay algunas fuentes que podrían ayudarte a comenzar o tener nuevas ideas 💡🧮👇</p>
+<ul>
+<li>
+<p><a href="https://www.openstreetmap.org/#map=6/-9.301/-75.002"><strong>OpenStreetMap (OSM)</strong>:</a>
+Es un proyecto colaborativo para crear un gran mapa editable,gratuito, y a nivel mundial. Hay últiples formas de aprovechar la información de OSM, tales como osmdata.xyz for gpk, Overpass API for GeoJSONs, etc.</p>
+</li>
+<li>
+<p><a href="https://www.naturalearthdata.com/"><strong>Natural Earth Data_</strong></a>
+Es un conjunto de datos de mapas de dominio público disponible a escalas 1:10 m, 1:50 my 1: 110 millones. Con datos vectoriales y ráster estrechamente integrados, con Natural Earth puede crear una variedad de mapas visualmente agradables y bien elaborados con cartografía o software GIS.</p>
+</li>
+<li>
+<p><a href="https://www.geoperu.gob.pe/"><strong>GEOPERU</strong>:</a>
+Es una plataforma que permite identificasr brechas sociales, económicas, de infraestrucura, darle seguimiento y ejecución de proyectos, así como el soporte para la planificación y proyección territorial. Desarrollada por el Estado Peruano, utilizando 100% código de uso libre.</p>
+</li>
+<li>
+<p><a href="http://escale.minedu.gob.pe/"><strong>ESCALE</strong>:</a>
+Es un portal web que permite el acceso a datos estadísticos del sector Educación, mediante módulos de consultas, visores de contenidos, mapas y descargas.</p>
+</li>
+<li>
+<p><a href="https://covid19.minsa.gob.pe/sala_situacional.asp"><strong>Sala Situacional COVID-19 PERÚ</strong>:</a>
+Es un tablero de control que muestra los datos actualizados oficiales de los casos positivos, fallecidos, letalidad, pruebas aplicadas, personas hospitalizadas, entre otros, respecto al COVID-19 en el Perú.</p>
+</li>
+<li>
+<p><a href="https://github.com/qgispe/Symbology-Hub"><strong>Symbology-Hub:</strong> </a> Simbología variada para la elaboración de mapas temáticos.</p>
+</li>
+<li>
+<p><a href="https://github.com/qgispe/QGIS-Patches-Peru"><strong>Patches:</strong> </a> Patches perzonalizados para Perú y otros.</p>
+</li>
+</ul>
+<h2 id="4-herramientas">[🔵] <strong>4. HERRAMIENTAS</strong> 🔧⚙<a class="headerlink" href="#4-herramientas" title="Permanent link">↵</a></h2>
+<p>Debido a que el desafío está dirigido a estar abierto para <strong>todos</strong>, las herramientas enumeradas aquí serán herramientas de <strong>código abierto (de uso libre)</strong>. Eso no significa que el desafío se pueda realizar con cualquier tipo de software (o incluso sin ningún software). Las habilidades de programación no son de ninguna manera un requisito para hacer los mapas. 💡🧮👇</p>
+<ul>
+<li>
+<p><a href="https://qgis.org/es/site/"><strong>QGIS:</strong> </a>
+Es una aplicación profesional de SIG que está construida sobre, y orgullosa de ser, Software Libre y de Código Abierto (FOSS).</p>
+</li>
+<li>
+<p><a href="http://www.gvsig.com/es"><strong>gvSIG:</strong> </a>
+Es un proyecto de desarrollo de software para Sistemas de Información Geográfica basado en software libre, utilizando Jython como una implementación de Python realizada en Java.</p>
+</li>
+<li>
+<p><a href="https://www.r-project.org"><strong>R:</strong> </a>
+Es un lenguaje de programación de análisis estadístico con herramientas gráficas muy avanzadas, y es un referente en el análisis estadístico desde hace muchos años. Existen diversas librerías espaciales para realizar cálculos avanzados espaciales.</p>
+</li>
+<li>
+<p><a href="https://www.python.org/"><strong>Python:</strong> </a>
+Es un lenguaje de programación versátil, multiparadigma, de código abierto y utilizado ampliamente en sistemas de información geográfica, tanto de código de uso libre como licenciado. PyQGIS es una de sus librerías que es utilizada nativamente con QGIS.</p>
+</li>
+<li>
+<p><a href="https://www.javascript.com/"><strong>Javascript:</strong> </a>
+Es un lenguaje de programación que permite crear contenido dinámico para páginas web. <a href="https://leafletjs.com/"><strong>Leaflet</strong></a> es una de sus librerías estrella para el uso de geovisores.</p>
+</li>
+<li>
+<p><a href="https://www.postgresql.org/"><strong>PostgreSQL:</strong> </a>
+Es un gestor de bases de datos relacionales que nativamente trabaja en el entorno de QGIS, desde su extensión <a href="https://postgis.net/"><strong>PostGIS</strong></a>.</p>
+</li>
+<li>
+<p><a href="https://www.sqlite.org/index.html"><strong>SQLite:</strong> </a>
+Es un sistema de gestión de base de datos (DBMS) que es simple, robusto, fácil de usar y muy ligero. Cada base de datos SQLite es simplemente un archivo. Puede libremente copiar, comprimirlo y portarlo entre Windows, Linux, MacOs, etc. Este presenta una extesión llamada <a href="https://www.gaia-gis.it/fossil/libspatialite/index"><strong>SpatiaLite</strong></a> que nos permite manejar base de datos espaciales.</p>
+</li>
+<li>
+<p><a href="https://www.blender.org/"><strong>Blender:</strong> </a>
+Es un programa informático multiplataforma, de código de uso libre, que permite el modelado 3D, animaciones, efectos visuales, entre otros. Con su librería Blender GIS, nos permite realizar diversos modelamientos espaciales.</p>
+</li>
+</ul>
+<h2 id="5-tutoriales">[🔵] <strong>5. TUTORIALES</strong> 🎥 👩‍💻 👨‍💻<a class="headerlink" href="#5-tutoriales" title="Permanent link">↵</a></h2>
+<table>
+<thead>
+<tr>
+<th>Un taller introductorio de QGIS para principiantes</th>
+<th>Buenas prácticas con QGIS aplicado a los recursos hídricos</th>
+<th>Leyenda personalizada de un mapa arqueológico en QGIS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.youtube.com/watch?v=-7v5qfJYWxA" title="Un taller introductorio de QGIS para principiantes"><img alt="add_col_area_perimetro" src="https://img.youtube.com/vi/-7v5qfJYWxA/0.jpg" /></a></td>
+<td><a href="https://www.youtube.com/watch?v=6upwMfROKuI" title="Buenas prácticas con QGIS aplicado a los recursos hídricos"><img alt="add_col_area_perimetro" src="https://img.youtube.com/vi/6upwMfROKuI/0.jpg" /></a></td>
+<td><a href="https://www.youtube.com/watch?v=kPsdYd85kGI" title="Leyenda personalizada de un mapa arqueológico en QGIS - nivel inicial"><img alt="add_col_perimetro" src="https://user-images.githubusercontent.com/23284899/131462582-5292c7fc-3ee8-4142-a9c8-1b413f644691.png" /></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-codigo-de-conducta">[🔵] <strong>6. CÓDIGO DE CONDUCTA</strong> 📜⚖<a class="headerlink" href="#6-codigo-de-conducta" title="Permanent link">↵</a></h2>
+<p>No importa si eres un experto en SIG o nunca hiciste un mapa, todos son bienvenidos a participar. Sin embargo, ten en cuenta algunas cosas:</p>
+<ul>
+<li>Todos los mapas que publiques deben ser su trabajo original. No robes contenido de otros.</li>
+<li>Dé crédito a la fuente de datos original siempre que sea posible.</li>
+<li>El desafío tiene que ver con la creatividad, la apertura y lo maravilloso que es trabajar con mapas y cartografía. No es una competencia, es diversión 😊</li>
+</ul>
+<h2 id="7-referencias">[🔵] <strong>7. REFERENCIAS</strong> 📝<a class="headerlink" href="#7-referencias" title="Permanent link">↵</a></h2>
+<ul>
+<li>
+<p><em>Topi Tjukanov, <strong>#30DayMapChallenge</strong>, (2020), repositorio de GitHub: <a href="https://github.com/tjukanovt/30DayMapChallenge">https://github.com/tjukanovt/30DayMapChallenge</a></em></p>
+</li>
+<li>
+<p><em>Salvatore Fiandaca, <strong>workshop-estate-gis-2021</strong>,(2021), repositorio de GitHub: <a href="https://github.com/pigreco/workshop-estate-gis-2021">https://github.com/pigreco/workshop-estate-gis-2021</a></em></p>
+</li>
+<li>
+<p><em>Asabeneh, <strong>30-Days-Of-HTML</strong>,(2021),repositorio de GitHub: <a href="https://github.com/Asabeneh/30-Days-Of-HTML">https://github.com/Asabeneh/30-Days-Of-HTML</a></em></p>
+</li>
+<li>
+<p><em>Oladipo Kayode, <strong>30-Days-Of-CSS</strong>,(2020), repositorio de GitHub: <a href="https://github.com/oluwakayode-a/30-Days-of-CSS">https://github.com/oluwakayode-a/30-Days-of-CSS</a></em></p>
+</li>
+</ul>
+<h2 id="8-cita">[🔵] <strong>8. CITA</strong> 🔖<a class="headerlink" href="#8-cita" title="Permanent link">↵</a></h2>
+<div class="highlight"><pre><span></span><code>@misc{Barja_30DayMapChallengeQGISPERU_2021,
+author = {Barja, Antony and Ferrer, Lucho and Añamuro, Hugo},
+doi = {10.5281/zenodo.5262851},
+month = {9},
+title = {30DayMapChallengeQGISPERU},
+url = {https://github.com/qgispe/30DayMapChallengeQGISPERU},
+year = {2021}
+}
+</code></pre></div>
+<h2 id="9-licencia">[🔵] <strong>9. LICENCIA</strong> 📃<a class="headerlink" href="#9-licencia" title="Permanent link">↵</a></h2>
+<p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img alt="licensebuttons by-nc-sa" src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png" /></a> Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Volver al principio
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pie">
+      
+      
+        
+        <a href="30DCMQGISPE_dia01/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Día 01" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              Día 01
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            <a href="https://twitter.com/antony_barja" title="@antony_barja" target="_blank">Creado por <b>Antony Barja| @antony_barja</b></a> | <a href="https://creativecommons.org/licenses/by-sa/4.0/!" title="Se non specificato diversamente, tutti i contenuti sono soggetti alla licenza Creative Commons Attribution-ShareAlike 4.0 licence (CC BY-SA)" target="_blank" class="link-dark text-decoration-none">Licenza CC-BY-SA-4.0</a>
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/qgispe" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M280.37 148.26 96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47 488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://twitter.com/qgispe" target="_blank" rel="noopener" title="Grupo Oficial de Usuarios QGIS Perú" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://www.facebook.com/qgispe" target="_blank" rel="noopener" title="Grupo de Usuarios QGIS Perú" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://t.me/qgisperu" target="_blank" rel="noopener" title="Grupo de telegram" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://www.instagram.com/qgispe/" target="_blank" rel="noopener" title="qgispe" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://www.linkedin.com/in/qgispe/" target="_blank" rel="noopener" title="Grupo Oficial de Usuarios QGIS Perú" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://github.com/qgispe/30DayMapChallengeQGISPERU/raw/main/docs/30DCMQGISPE.pdf" target="_blank" rel="noopener" title="Descargar archivo PDF (0.74 mb)" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105 279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.top", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.756773cc.min.js"></script>
+      
+        <script src="js/print-site-instant-loading.js"></script>
+      
+        <script src="js/print-site.js"></script>
+      
+        <script src="stylesheets/extra.js"></script>
+      
+    
+  </body>
+</html>
